@@ -1,6 +1,6 @@
 package dev.mjtorrest.reservations.dto;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class PassengerDTO {
 
@@ -8,7 +8,7 @@ public class PassengerDTO {
     private String lastName;
     private String documentNumber;
     private String documentType;
-    private Date birthday;
+    private LocalDate birthday;
 
     public String getFirstName() {
         return firstName;
@@ -42,11 +42,11 @@ public class PassengerDTO {
         this.documentType = documentType;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 }
