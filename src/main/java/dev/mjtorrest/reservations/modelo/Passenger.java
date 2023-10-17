@@ -1,6 +1,6 @@
 package dev.mjtorrest.reservations.modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Passenger {
     private Long id;
@@ -8,7 +8,7 @@ public class Passenger {
     private String lastName;
     private String documentNumber;
     private String documentType;
-    private Date birthday;
+    private LocalDate birthday;
 
     public Long getId() {
         return id;
@@ -50,11 +50,11 @@ public class Passenger {
         this.documentType = documentType;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 }
